@@ -1,0 +1,27 @@
+PODS:
+  - MROperation (0.1.0)
+  - MRSpeechDispatcher (0.0.1):
+    - MRSpeechDispatcher/Dispatcher (= 0.0.1)
+    - MRSpeechDispatcher/Operation (= 0.0.1)
+    - MRSpeechDispatcher/SynthesisVoice (= 0.0.1)
+    - MRSpeechDispatcher/Utterance (= 0.0.1)
+  - MRSpeechDispatcher/Dispatcher (0.0.1):
+    - MRSpeechDispatcher/Operation
+    - MRSpeechDispatcher/Utterance
+  - MRSpeechDispatcher/Operation (0.0.1):
+    - MROperation (~> 0.1.0)
+  - MRSpeechDispatcher/SynthesisVoice (0.0.1)
+  - MRSpeechDispatcher/Utterance (0.0.1)
+
+DEPENDENCIES:
+  - MRSpeechDispatcher (from `../`)
+
+EXTERNAL SOURCES:
+  MRSpeechDispatcher:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MROperation: 2563f58ff281608ffae5a8d5ffcaaf437f1822d9
+  MRSpeechDispatcher: d3f4faad9429ce98c7b2c8b800b71ba62df819d9
+
+COCOAPODS: 0.38.2

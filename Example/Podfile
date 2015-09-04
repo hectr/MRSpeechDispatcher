@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+#use_frameworks!
+
+target 'MRSpeechDispatcher_Example', :exclusive => true do
+  pod "MRSpeechDispatcher", :path => "../"
+end
+
+target 'MRSpeechDispatcher_Tests', :exclusive => true do
+  pod "MRSpeechDispatcher", :path => "../"
+
+  
+end

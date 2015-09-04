@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		027C9AF00B3C5F8EA7D2327FDD162CE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CFAEF1FD1B810AC7F156534540B9FD /* Foundation.framework */; };
+		1700A35F60213B382C5F8DCAF0C58A43 /* AVSpeechSynthesisVoice+MRSpeechDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E56DFC76E00E749B7CF0B9E73B3737E /* AVSpeechSynthesisVoice+MRSpeechDispatcher.h */; };
+		23DA87C87A8D68257319487F0A2E5E33 /* AVSpeechUtterance+MRSpeechDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB47DB877AC1735D8A814AE6ECB6BD8 /* AVSpeechUtterance+MRSpeechDispatcher.m */; };
+		447A89B358FA42D94527FF00A4E1CE02 /* MROperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D67EF9E462B41F0B054B1B3A9BC5518 /* MROperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		51FA2C551B81BDE6292FE6ABFFA3785D /* MRSpeechDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B63746ED071775F0E1954485CC7DDC /* MRSpeechDispatcher.m */; };
+		68914C2AAE2DA56859A5145C657DBF71 /* MRSpeechUtteranceOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADF7B7832C4111C630AC4C3869728B0 /* MRSpeechUtteranceOperation.m */; };
+		6FA9D9CF7E9E5F161C2CD972471F1644 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CFAEF1FD1B810AC7F156534540B9FD /* Foundation.framework */; };
+		93E8892EBEDEC7E461384FE9DC4D5C12 /* AVSpeechUtterance+MRSpeechDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 88E4CFE0C20C311DCFEDC4305A84CD3C /* AVSpeechUtterance+MRSpeechDispatcher.h */; };
+		941610A46B9025A5F27745DAFB0AA11B /* MRSpeechDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 13FD530BDE0B021AFAC7A1A7B0008BAD /* MRSpeechDispatcher.h */; };
+		A0A1345387E50F3C34D0C26F979D7BB2 /* MRSpeechDispatcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF884FA8DDAFF2CEB75AF58409DA4D7 /* MRSpeechDispatcher-dummy.m */; };
+		AC6F3075323893F299B1AE5EFFAB438B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CFAEF1FD1B810AC7F156534540B9FD /* Foundation.framework */; };
+		B26F02FB1EBEA026234DD29AE58EB8C4 /* Pods-MRSpeechDispatcher_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C3E142C3AB8CF82ACE2AD7BEED6977 /* Pods-MRSpeechDispatcher_Example-dummy.m */; };
+		C008E1901FE287066E9B9E8EFC8B0768 /* MRSpeechUtteranceOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 76163768598AEE0038B55A2539151D8B /* MRSpeechUtteranceOperation.h */; };
+		CDC3C948933288F53FF56A910A3C9828 /* Pods-MRSpeechDispatcher_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A809FD80531804EFEE11B0952F12DD /* Pods-MRSpeechDispatcher_Tests-dummy.m */; };
+		CE7755FFCE7E473DC735C8614E549E65 /* AVSpeechSynthesisVoice+MRSpeechDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E14B1153D833DB0982A9D4D9AC916A /* AVSpeechSynthesisVoice+MRSpeechDispatcher.m */; };
+		CFAB17F161E495684F57CF918A411E7F /* MROperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E10183C9CA97F9756E519E79D0A247D7 /* MROperation.h */; };
+		D3B1512DB2FDCBD5BB193BDEAEC19360 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CFAEF1FD1B810AC7F156534540B9FD /* Foundation.framework */; };
+		F6FC70EDE0E08E42C0E45722E14FEF68 /* MROperation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D6A60494D349E094FC88FB59F35C35 /* MROperation-dummy.m */; };
+		F9B087F453A5CA1AE2A4D0A9976CE217 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8EB23BA4A87E2B88CF423D0F53982D6 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A3405BF5871DD3F129F1C3F57CA1E67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB55B022E4178BDF4085448387F962C3;
+			remoteInfo = MROperation;
+		};
+		36F6DA80297E376B23DFD80F88BDB39E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA44B1579E6856EDB30D76E12ADAA874;
+			remoteInfo = MRSpeechDispatcher;
+		};
+		5276FE5DCF02DC826CC1820DEF4B7004 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA44B1579E6856EDB30D76E12ADAA874;
+			remoteInfo = MRSpeechDispatcher;
+		};
+		9211A948D9C12A0667CD773B405324D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB55B022E4178BDF4085448387F962C3;
+			remoteInfo = MROperation;
+		};
+		FFF70A597646987D04510E4ED229F533 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB55B022E4178BDF4085448387F962C3;
+			remoteInfo = MROperation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13FD530BDE0B021AFAC7A1A7B0008BAD /* MRSpeechDispatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MRSpeechDispatcher.h; sourceTree = "<group>"; };
+		1BD3DB0567FADF1054CC0B231BF64668 /* Pods-MRSpeechDispatcher_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRSpeechDispatcher_Tests-resources.sh"; sourceTree = "<group>"; };
+		1C3ADF7DBEB9AD2B19ACB4B4AA288702 /* Pods-MRSpeechDispatcher_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MRSpeechDispatcher_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		2089A3C344EAA147BB373F04EA2CE24A /* Pods-MRSpeechDispatcher_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRSpeechDispatcher_Example.release.xcconfig"; sourceTree = "<group>"; };
+		2EC1925451F9E7B033D0E18276119415 /* libPods-MRSpeechDispatcher_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MRSpeechDispatcher_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F6EB1F0DFA1738AA4D77EE94572216D /* Pods-MRSpeechDispatcher_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRSpeechDispatcher_Example-resources.sh"; sourceTree = "<group>"; };
+		2FF884FA8DDAFF2CEB75AF58409DA4D7 /* MRSpeechDispatcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MRSpeechDispatcher-dummy.m"; sourceTree = "<group>"; };
+		44B63746ED071775F0E1954485CC7DDC /* MRSpeechDispatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MRSpeechDispatcher.m; sourceTree = "<group>"; };
+		49AF7386F4897A61B6DFFA2A3DD9C549 /* Pods-MRSpeechDispatcher_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRSpeechDispatcher_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4ADF7B7832C4111C630AC4C3869728B0 /* MRSpeechUtteranceOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MRSpeechUtteranceOperation.m; sourceTree = "<group>"; };
+		4E56DFC76E00E749B7CF0B9E73B3737E /* AVSpeechSynthesisVoice+MRSpeechDispatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AVSpeechSynthesisVoice+MRSpeechDispatcher.h"; sourceTree = "<group>"; };
+		51CFAEF1FD1B810AC7F156534540B9FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		51FD4AAB4010B54592365D9769C8ADDA /* libPods-MRSpeechDispatcher_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MRSpeechDispatcher_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A2994D54E8E1DD827432E2F990EBE3 /* Pods-MRSpeechDispatcher_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRSpeechDispatcher_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		5348E4144BD4AFF8D02BB5F6F48AE5EC /* MROperation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MROperation-prefix.pch"; sourceTree = "<group>"; };
+		54A809FD80531804EFEE11B0952F12DD /* Pods-MRSpeechDispatcher_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MRSpeechDispatcher_Tests-dummy.m"; sourceTree = "<group>"; };
+		68C3DD7275893FAD2E82A339472C8DF2 /* MRSpeechDispatcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MRSpeechDispatcher-prefix.pch"; sourceTree = "<group>"; };
+		76163768598AEE0038B55A2539151D8B /* MRSpeechUtteranceOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MRSpeechUtteranceOperation.h; sourceTree = "<group>"; };
+		7E13EF60E8DB5C89C294D6C461133ADD /* Pods-MRSpeechDispatcher_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MRSpeechDispatcher_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		82D6A60494D349E094FC88FB59F35C35 /* MROperation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MROperation-dummy.m"; sourceTree = "<group>"; };
+		88E4CFE0C20C311DCFEDC4305A84CD3C /* AVSpeechUtterance+MRSpeechDispatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AVSpeechUtterance+MRSpeechDispatcher.h"; sourceTree = "<group>"; };
+		8D67EF9E462B41F0B054B1B3A9BC5518 /* MROperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MROperation.m; path = MROperation/MROperation.m; sourceTree = "<group>"; };
+		9A5F2A05F9C6938842D8FE54243257C6 /* MRSpeechDispatcher-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MRSpeechDispatcher-Private.xcconfig"; sourceTree = "<group>"; };
+		9CB22451382760EA92598CDAC3A2353D /* libMRSpeechDispatcher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMRSpeechDispatcher.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D6BD5149CB7A2C224361B9DEA7ACF00 /* MROperation-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MROperation-Private.xcconfig"; sourceTree = "<group>"; };
+		A0E14B1153D833DB0982A9D4D9AC916A /* AVSpeechSynthesisVoice+MRSpeechDispatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AVSpeechSynthesisVoice+MRSpeechDispatcher.m"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C6B2C47FD173FDB8413BF641E4D6A683 /* Pods-MRSpeechDispatcher_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MRSpeechDispatcher_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DD4678D1FC640787026E26AFE8092784 /* Pods-MRSpeechDispatcher_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MRSpeechDispatcher_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DDB47DB877AC1735D8A814AE6ECB6BD8 /* AVSpeechUtterance+MRSpeechDispatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AVSpeechUtterance+MRSpeechDispatcher.m"; sourceTree = "<group>"; };
+		E10183C9CA97F9756E519E79D0A247D7 /* MROperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MROperation.h; path = MROperation/MROperation.h; sourceTree = "<group>"; };
+		E1C3E142C3AB8CF82ACE2AD7BEED6977 /* Pods-MRSpeechDispatcher_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MRSpeechDispatcher_Example-dummy.m"; sourceTree = "<group>"; };
+		EC4DFBB14F0F6F4F1F997B72C1748DD6 /* MRSpeechDispatcher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MRSpeechDispatcher.xcconfig; sourceTree = "<group>"; };
+		F31C2550C1185BEA2CF7748FA978E6C5 /* MROperation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MROperation.xcconfig; sourceTree = "<group>"; };
+		F8EB23BA4A87E2B88CF423D0F53982D6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		F9DA828B4D196A37BB9CC4D686307FCE /* libMROperation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMROperation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFAB89B01AF688E0D8C689219384F807 /* Pods-MRSpeechDispatcher_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRSpeechDispatcher_Example.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C0888BEB656BE760E10A3A7A78A05CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC6F3075323893F299B1AE5EFFAB438B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19341CA20F3009146208810C6177D7CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9B087F453A5CA1AE2A4D0A9976CE217 /* AVFoundation.framework in Frameworks */,
+				6FA9D9CF7E9E5F161C2CD972471F1644 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E097A78695E094806DC3A663216E4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				027C9AF00B3C5F8EA7D2327FDD162CE3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42792C7EDD2A4926E84A37B04BFD7F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3B1512DB2FDCBD5BB193BDEAEC19360 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04BE5E3EC6D5C4267BBF2C31E2586D72 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC4DFBB14F0F6F4F1F997B72C1748DD6 /* MRSpeechDispatcher.xcconfig */,
+				9A5F2A05F9C6938842D8FE54243257C6 /* MRSpeechDispatcher-Private.xcconfig */,
+				2FF884FA8DDAFF2CEB75AF58409DA4D7 /* MRSpeechDispatcher-dummy.m */,
+				68C3DD7275893FAD2E82A339472C8DF2 /* MRSpeechDispatcher-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MRSpeechDispatcher";
+			sourceTree = "<group>";
+		};
+		0AA018695DD430E00FABA1D6DD89C93E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F8EB23BA4A87E2B88CF423D0F53982D6 /* AVFoundation.framework */,
+				51CFAEF1FD1B810AC7F156534540B9FD /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		0C60B031774C8DA5407841531F1D3DBE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D8AB2B582D4E5547D50E714A8D88854 /* Pods-MRSpeechDispatcher_Example */,
+				7F870A3290A47B81541557C6403941A0 /* Pods-MRSpeechDispatcher_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0D8AB2B582D4E5547D50E714A8D88854 /* Pods-MRSpeechDispatcher_Example */ = {
+			isa = PBXGroup;
+			children = (
+				7E13EF60E8DB5C89C294D6C461133ADD /* Pods-MRSpeechDispatcher_Example-acknowledgements.markdown */,
+				1C3ADF7DBEB9AD2B19ACB4B4AA288702 /* Pods-MRSpeechDispatcher_Example-acknowledgements.plist */,
+				E1C3E142C3AB8CF82ACE2AD7BEED6977 /* Pods-MRSpeechDispatcher_Example-dummy.m */,
+				2F6EB1F0DFA1738AA4D77EE94572216D /* Pods-MRSpeechDispatcher_Example-resources.sh */,
+				FFAB89B01AF688E0D8C689219384F807 /* Pods-MRSpeechDispatcher_Example.debug.xcconfig */,
+				2089A3C344EAA147BB373F04EA2CE24A /* Pods-MRSpeechDispatcher_Example.release.xcconfig */,
+			);
+			name = "Pods-MRSpeechDispatcher_Example";
+			path = "Target Support Files/Pods-MRSpeechDispatcher_Example";
+			sourceTree = "<group>";
+		};
+		16FE1DF4A1F1389554C4233EB9EF0840 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E4F8B5A1F78795503C205C5F001155A /* MROperation */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		338DEB84FEAA863914B5A2042128D322 /* MRSpeechDispatcher */ = {
+			isa = PBXGroup;
+			children = (
+				4E56DFC76E00E749B7CF0B9E73B3737E /* AVSpeechSynthesisVoice+MRSpeechDispatcher.h */,
+				A0E14B1153D833DB0982A9D4D9AC916A /* AVSpeechSynthesisVoice+MRSpeechDispatcher.m */,
+				88E4CFE0C20C311DCFEDC4305A84CD3C /* AVSpeechUtterance+MRSpeechDispatcher.h */,
+				DDB47DB877AC1735D8A814AE6ECB6BD8 /* AVSpeechUtterance+MRSpeechDispatcher.m */,
+				13FD530BDE0B021AFAC7A1A7B0008BAD /* MRSpeechDispatcher.h */,
+				44B63746ED071775F0E1954485CC7DDC /* MRSpeechDispatcher.m */,
+				76163768598AEE0038B55A2539151D8B /* MRSpeechUtteranceOperation.h */,
+				4ADF7B7832C4111C630AC4C3869728B0 /* MRSpeechUtteranceOperation.m */,
+			);
+			path = MRSpeechDispatcher;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AA018695DD430E00FABA1D6DD89C93E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48A994CE971CF3C7F408AC7A481F505D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDD7FD96C1A244E47F488845ABA490F1 /* MRSpeechDispatcher */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		6042BC0377F7D72C6A66C2CB26CACFC8 /* MRSpeechDispatcher */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MRSpeechDispatcher;
+			sourceTree = "<group>";
+		};
+		63B34723D82CF6E01DE0C7482E283915 /* MRSpeechDispatcher */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MRSpeechDispatcher;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				48A994CE971CF3C7F408AC7A481F505D /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				16FE1DF4A1F1389554C4233EB9EF0840 /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				0C60B031774C8DA5407841531F1D3DBE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7F870A3290A47B81541557C6403941A0 /* Pods-MRSpeechDispatcher_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DD4678D1FC640787026E26AFE8092784 /* Pods-MRSpeechDispatcher_Tests-acknowledgements.markdown */,
+				C6B2C47FD173FDB8413BF641E4D6A683 /* Pods-MRSpeechDispatcher_Tests-acknowledgements.plist */,
+				54A809FD80531804EFEE11B0952F12DD /* Pods-MRSpeechDispatcher_Tests-dummy.m */,
+				1BD3DB0567FADF1054CC0B231BF64668 /* Pods-MRSpeechDispatcher_Tests-resources.sh */,
+				52A2994D54E8E1DD827432E2F990EBE3 /* Pods-MRSpeechDispatcher_Tests.debug.xcconfig */,
+				49AF7386F4897A61B6DFFA2A3DD9C549 /* Pods-MRSpeechDispatcher_Tests.release.xcconfig */,
+			);
+			name = "Pods-MRSpeechDispatcher_Tests";
+			path = "Target Support Files/Pods-MRSpeechDispatcher_Tests";
+			sourceTree = "<group>";
+		};
+		8D81735A167350B05E5DCA5DCB360FD7 /* MRSpeechDispatcher */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MRSpeechDispatcher;
+			sourceTree = "<group>";
+		};
+		8E4F8B5A1F78795503C205C5F001155A /* MROperation */ = {
+			isa = PBXGroup;
+			children = (
+				E10183C9CA97F9756E519E79D0A247D7 /* MROperation.h */,
+				8D67EF9E462B41F0B054B1B3A9BC5518 /* MROperation.m */,
+				F9A975E529B511AB353D9BF473D1687C /* Support Files */,
+			);
+			path = MROperation;
+			sourceTree = "<group>";
+		};
+		BB088FEAA59712D38A9DC33595B3BAB0 /* Utterance */ = {
+			isa = PBXGroup;
+			children = (
+				6042BC0377F7D72C6A66C2CB26CACFC8 /* MRSpeechDispatcher */,
+			);
+			name = Utterance;
+			sourceTree = "<group>";
+		};
+		C405CA87691ECB231975341DB3D63181 /* SynthesisVoice */ = {
+			isa = PBXGroup;
+			children = (
+				8D81735A167350B05E5DCA5DCB360FD7 /* MRSpeechDispatcher */,
+			);
+			name = SynthesisVoice;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9DA828B4D196A37BB9CC4D686307FCE /* libMROperation.a */,
+				9CB22451382760EA92598CDAC3A2353D /* libMRSpeechDispatcher.a */,
+				2EC1925451F9E7B033D0E18276119415 /* libPods-MRSpeechDispatcher_Example.a */,
+				51FD4AAB4010B54592365D9769C8ADDA /* libPods-MRSpeechDispatcher_Tests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDD7FD96C1A244E47F488845ABA490F1 /* MRSpeechDispatcher */ = {
+			isa = PBXGroup;
+			children = (
+				EC251F54EAE25D5BB786E326535399E8 /* Dispatcher */,
+				338DEB84FEAA863914B5A2042128D322 /* MRSpeechDispatcher */,
+				E9DE226F795B33D6CDC69248E7892F2A /* Operation */,
+				04BE5E3EC6D5C4267BBF2C31E2586D72 /* Support Files */,
+				C405CA87691ECB231975341DB3D63181 /* SynthesisVoice */,
+				BB088FEAA59712D38A9DC33595B3BAB0 /* Utterance */,
+			);
+			name = MRSpeechDispatcher;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		DE666CE7D3440FBC74196779EB62EF9E /* MRSpeechDispatcher */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MRSpeechDispatcher;
+			sourceTree = "<group>";
+		};
+		E9DE226F795B33D6CDC69248E7892F2A /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				63B34723D82CF6E01DE0C7482E283915 /* MRSpeechDispatcher */,
+			);
+			name = Operation;
+			sourceTree = "<group>";
+		};
+		EC251F54EAE25D5BB786E326535399E8 /* Dispatcher */ = {
+			isa = PBXGroup;
+			children = (
+				DE666CE7D3440FBC74196779EB62EF9E /* MRSpeechDispatcher */,
+			);
+			name = Dispatcher;
+			sourceTree = "<group>";
+		};
+		F9A975E529B511AB353D9BF473D1687C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F31C2550C1185BEA2CF7748FA978E6C5 /* MROperation.xcconfig */,
+				9D6BD5149CB7A2C224361B9DEA7ACF00 /* MROperation-Private.xcconfig */,
+				82D6A60494D349E094FC88FB59F35C35 /* MROperation-dummy.m */,
+				5348E4144BD4AFF8D02BB5F6F48AE5EC /* MROperation-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MROperation";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		05EB6CF12FE6DDC1813C4B03967C7987 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFAB17F161E495684F57CF918A411E7F /* MROperation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92671E6B1CCBD3F8891B2D4105868BE7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1700A35F60213B382C5F8DCAF0C58A43 /* AVSpeechSynthesisVoice+MRSpeechDispatcher.h in Headers */,
+				93E8892EBEDEC7E461384FE9DC4D5C12 /* AVSpeechUtterance+MRSpeechDispatcher.h in Headers */,
+				941610A46B9025A5F27745DAFB0AA11B /* MRSpeechDispatcher.h in Headers */,
+				C008E1901FE287066E9B9E8EFC8B0768 /* MRSpeechUtteranceOperation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		200A621F7450432B4C399F06F7081E1C /* Pods-MRSpeechDispatcher_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 802F4D114D193C609C92728D0CF803C5 /* Build configuration list for PBXNativeTarget "Pods-MRSpeechDispatcher_Example" */;
+			buildPhases = (
+				E750DEDE37C19302FECEDA21DEC9F717 /* Sources */,
+				C42792C7EDD2A4926E84A37B04BFD7F7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5187DBB45D43EED69D8A0E86408A445F /* PBXTargetDependency */,
+				993267276E5F341996CDE847BE490826 /* PBXTargetDependency */,
+			);
+			name = "Pods-MRSpeechDispatcher_Example";
+			productName = "Pods-MRSpeechDispatcher_Example";
+			productReference = 2EC1925451F9E7B033D0E18276119415 /* libPods-MRSpeechDispatcher_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		93A33BB30464FC4C76D0D1C3B1B16500 /* Pods-MRSpeechDispatcher_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C73B8A0CC4FC1DBBD27B5C0C2CC931B3 /* Build configuration list for PBXNativeTarget "Pods-MRSpeechDispatcher_Tests" */;
+			buildPhases = (
+				E73F460570AD8BDA35A38280FE8BA11F /* Sources */,
+				78E097A78695E094806DC3A663216E4D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38C5EF81B5A751308640AF7942AB3804 /* PBXTargetDependency */,
+				5DE4C9CC5861E8E36F503AF2907E8416 /* PBXTargetDependency */,
+			);
+			name = "Pods-MRSpeechDispatcher_Tests";
+			productName = "Pods-MRSpeechDispatcher_Tests";
+			productReference = 51FD4AAB4010B54592365D9769C8ADDA /* libPods-MRSpeechDispatcher_Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DA44B1579E6856EDB30D76E12ADAA874 /* MRSpeechDispatcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B64A035D933BD4907EFAE701788FA991 /* Build configuration list for PBXNativeTarget "MRSpeechDispatcher" */;
+			buildPhases = (
+				54F92686DD9B36274D858F7F6F16CB71 /* Sources */,
+				19341CA20F3009146208810C6177D7CD /* Frameworks */,
+				92671E6B1CCBD3F8891B2D4105868BE7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA1F62FCFA488B222163D85DEFB01B4C /* PBXTargetDependency */,
+			);
+			name = MRSpeechDispatcher;
+			productName = MRSpeechDispatcher;
+			productReference = 9CB22451382760EA92598CDAC3A2353D /* libMRSpeechDispatcher.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EB55B022E4178BDF4085448387F962C3 /* MROperation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2127C6F61DDF914B3EBA73C0DA48DCD /* Build configuration list for PBXNativeTarget "MROperation" */;
+			buildPhases = (
+				3A25415A8CA543EEC8E93852A64B8BF1 /* Sources */,
+				0C0888BEB656BE760E10A3A7A78A05CB /* Frameworks */,
+				05EB6CF12FE6DDC1813C4B03967C7987 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MROperation;
+			productName = MROperation;
+			productReference = F9DA828B4D196A37BB9CC4D686307FCE /* libMROperation.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB55B022E4178BDF4085448387F962C3 /* MROperation */,
+				DA44B1579E6856EDB30D76E12ADAA874 /* MRSpeechDispatcher */,
+				200A621F7450432B4C399F06F7081E1C /* Pods-MRSpeechDispatcher_Example */,
+				93A33BB30464FC4C76D0D1C3B1B16500 /* Pods-MRSpeechDispatcher_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A25415A8CA543EEC8E93852A64B8BF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6FC70EDE0E08E42C0E45722E14FEF68 /* MROperation-dummy.m in Sources */,
+				447A89B358FA42D94527FF00A4E1CE02 /* MROperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54F92686DD9B36274D858F7F6F16CB71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7755FFCE7E473DC735C8614E549E65 /* AVSpeechSynthesisVoice+MRSpeechDispatcher.m in Sources */,
+				23DA87C87A8D68257319487F0A2E5E33 /* AVSpeechUtterance+MRSpeechDispatcher.m in Sources */,
+				A0A1345387E50F3C34D0C26F979D7BB2 /* MRSpeechDispatcher-dummy.m in Sources */,
+				51FA2C551B81BDE6292FE6ABFFA3785D /* MRSpeechDispatcher.m in Sources */,
+				68914C2AAE2DA56859A5145C657DBF71 /* MRSpeechUtteranceOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E73F460570AD8BDA35A38280FE8BA11F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDC3C948933288F53FF56A910A3C9828 /* Pods-MRSpeechDispatcher_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E750DEDE37C19302FECEDA21DEC9F717 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B26F02FB1EBEA026234DD29AE58EB8C4 /* Pods-MRSpeechDispatcher_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38C5EF81B5A751308640AF7942AB3804 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MROperation;
+			target = EB55B022E4178BDF4085448387F962C3 /* MROperation */;
+			targetProxy = 0A3405BF5871DD3F129F1C3F57CA1E67 /* PBXContainerItemProxy */;
+		};
+		5187DBB45D43EED69D8A0E86408A445F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MROperation;
+			target = EB55B022E4178BDF4085448387F962C3 /* MROperation */;
+			targetProxy = 9211A948D9C12A0667CD773B405324D1 /* PBXContainerItemProxy */;
+		};
+		5DE4C9CC5861E8E36F503AF2907E8416 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MRSpeechDispatcher;
+			target = DA44B1579E6856EDB30D76E12ADAA874 /* MRSpeechDispatcher */;
+			targetProxy = 36F6DA80297E376B23DFD80F88BDB39E /* PBXContainerItemProxy */;
+		};
+		993267276E5F341996CDE847BE490826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MRSpeechDispatcher;
+			target = DA44B1579E6856EDB30D76E12ADAA874 /* MRSpeechDispatcher */;
+			targetProxy = 5276FE5DCF02DC826CC1820DEF4B7004 /* PBXContainerItemProxy */;
+		};
+		EA1F62FCFA488B222163D85DEFB01B4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MROperation;
+			target = EB55B022E4178BDF4085448387F962C3 /* MROperation */;
+			targetProxy = FFF70A597646987D04510E4ED229F533 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3A018670B1189EF433CDD918F623D8CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFAB89B01AF688E0D8C689219384F807 /* Pods-MRSpeechDispatcher_Example.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3B3072E8FC17CBAF2B017C4679AB66D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D6BD5149CB7A2C224361B9DEA7ACF00 /* MROperation-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MROperation/MROperation-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7487F737778B500C48F28CE0D033C673 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A5F2A05F9C6938842D8FE54243257C6 /* MRSpeechDispatcher-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MRSpeechDispatcher/MRSpeechDispatcher-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A36D9C8D9AEF1BB66FE5229023247AFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52A2994D54E8E1DD827432E2F990EBE3 /* Pods-MRSpeechDispatcher_Tests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CE53125A2FB87F1E9FC3A56CAE0D6326 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2089A3C344EAA147BB373F04EA2CE24A /* Pods-MRSpeechDispatcher_Example.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D72EFA3AC65A5034A16BF7F33113A3BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A5F2A05F9C6938842D8FE54243257C6 /* MRSpeechDispatcher-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MRSpeechDispatcher/MRSpeechDispatcher-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E5272425302FF3F7E8F50CCF988A912C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49AF7386F4897A61B6DFFA2A3DD9C549 /* Pods-MRSpeechDispatcher_Tests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FF3797FD2AF34BD1159B3CFEF12843E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D6BD5149CB7A2C224361B9DEA7ACF00 /* MROperation-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MROperation/MROperation-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
+				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		802F4D114D193C609C92728D0CF803C5 /* Build configuration list for PBXNativeTarget "Pods-MRSpeechDispatcher_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A018670B1189EF433CDD918F623D8CE /* Debug */,
+				CE53125A2FB87F1E9FC3A56CAE0D6326 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B64A035D933BD4907EFAE701788FA991 /* Build configuration list for PBXNativeTarget "MRSpeechDispatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D72EFA3AC65A5034A16BF7F33113A3BD /* Debug */,
+				7487F737778B500C48F28CE0D033C673 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C73B8A0CC4FC1DBBD27B5C0C2CC931B3 /* Build configuration list for PBXNativeTarget "Pods-MRSpeechDispatcher_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A36D9C8D9AEF1BB66FE5229023247AFD /* Debug */,
+				E5272425302FF3F7E8F50CCF988A912C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2127C6F61DDF914B3EBA73C0DA48DCD /* Build configuration list for PBXNativeTarget "MROperation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B3072E8FC17CBAF2B017C4679AB66D9 /* Debug */,
+				FF3797FD2AF34BD1159B3CFEF12843E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

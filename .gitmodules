@@ -1,0 +1,3 @@
+[submodule "Example/BCP47LanguageCodeForString"]
+	path = Example/BCP47LanguageCodeForString
+	url = https://gist.github.com/9892187.git

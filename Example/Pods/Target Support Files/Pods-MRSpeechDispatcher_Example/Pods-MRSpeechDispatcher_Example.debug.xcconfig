@@ -1,0 +1,5 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/MROperation" "${PODS_ROOT}/Headers/Public/MRSpeechDispatcher"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/MROperation" -isystem "${PODS_ROOT}/Headers/Public/MRSpeechDispatcher"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"MROperation" -l"MRSpeechDispatcher" -framework "AVFoundation"
+PODS_ROOT = ${SRCROOT}/Pods
