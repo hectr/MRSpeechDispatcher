@@ -55,4 +55,13 @@ __attribute__((returns_nonnull, nonnull (1)));
 + (nonnull AVSpeechUtterance *)hurryUtteranceWithText:(nonnull NSString *)text
 __attribute__((returns_nonnull, nonnull (1)));
 
+/**
+ Creates an utterance object with text to be spoken and brisk voice parameters.
+ 
+ @param string A string containing text to be spoken.
+ @return An `AVSpeechUtterance` object that can speak the specified text.
+ */
++ (nonnull AVSpeechUtterance *)briskUtteranceWithText:(nonnull NSString *)text
+__attribute__((returns_nonnull, nonnull (1)));
+
 @end

@@ -78,6 +78,9 @@
         case MRSpeechAnimusHurry:
             utterance = [AVSpeechUtterance hurryUtteranceWithText:text];
             break;
+        case MRSpeechAnimusBrisk:
+            utterance = [AVSpeechUtterance briskUtteranceWithText:text];
+            break;
     }
     
     if (_reusedVoice) {

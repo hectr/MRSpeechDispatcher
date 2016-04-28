@@ -39,7 +39,9 @@ typedef NS_ENUM(NSInteger, MRSpeechAnimus) {
     /** Glad speech animus. */
     MRSpeechAnimusGlad,
     /** Fast speech animus. */
-    MRSpeechAnimusHurry
+    MRSpeechAnimusHurry,
+    /** Brisk speech animus. */
+    MRSpeechAnimusBrisk,
 };
 
 

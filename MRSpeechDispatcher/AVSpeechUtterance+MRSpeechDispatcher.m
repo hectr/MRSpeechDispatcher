@@ -26,10 +26,12 @@
 static float const kRegularUtteranceSpeechRateModifier = 2.0f/6;
 static float const kGladUtteranceSpeechRateModifier = 2.0f/7;
 static float const kHurryUtteranceSpeechRateModifier = 3.0f/7;
+static float const kBriskUtteranceSpeechRateModifier = 6.0f/7;
 
 static float const kRegularPitchMultiplier = 1.2f;
 static float const kGladPitchMultiplier = 1.3f;
 static float const kHurryPitchMultiplier = 1.2f;
+static float const kBriskPitchMultiplier = 1.3f;
 
 
 @implementation AVSpeechUtterance (MRSpeechDispatcher)
@@ -73,6 +75,20 @@ static float const kHurryPitchMultiplier = 1.2f;
              , @"Specified speech rate is too high" );
     utterance.rate = rate;
     utterance.pitchMultiplier = kHurryPitchMultiplier;
+    return utterance;
+}
+
++ (AVSpeechUtterance *)briskUtteranceWithText:(NSString *const)text
+{
+    AVSpeechUtterance *const utterance = [AVSpeechUtterance speechUtteranceWithString:text];
+    float const baseRate = AVSpeechUtteranceMinimumSpeechRate + AVSpeechUtteranceDefaultSpeechRate;
+    float const rate = kBriskUtteranceSpeechRateModifier*baseRate;
+    NSAssert( rate >= AVSpeechUtteranceMinimumSpeechRate
+             , @"Specified speech rate is too low" );
+    NSAssert( rate <= AVSpeechUtteranceMaximumSpeechRate
+             , @"Specified speech rate is too high" );
+    utterance.rate = rate;
+    utterance.pitchMultiplier = kBriskPitchMultiplier;
     return utterance;
 }
 
