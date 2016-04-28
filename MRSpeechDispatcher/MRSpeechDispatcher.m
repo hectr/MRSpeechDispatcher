@@ -68,6 +68,7 @@
     switch (animus) {
         case MRSpeechAnimusDefault:
             utterance = [AVSpeechUtterance speechUtteranceWithString:text];
+            break;
         case MRSpeechAnimusRegular:
             utterance = [AVSpeechUtterance regularUtteranceWithText:text];
             break;
